@@ -1,0 +1,50 @@
+
+.prevention-container {
+  padding: 2rem;
+}
+
+.prevention-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00796b;
+  margin-bottom: 3rem;
+}
+
+.prevention-steps {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.step-card {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.step-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1abc9c;
+  margin-right: 2rem;
+  line-height: 1;
+}
+
+.step-content {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  flex: 1;
+}
+
+.step-content h3 {
+  font-size: 1.5rem;
+  color: #004d40;
+  margin-bottom: 0.5rem;
+}
+
+.step-content p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
