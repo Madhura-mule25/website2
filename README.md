@@ -16,10 +16,29 @@ A React-based web application for promoting digital wellness and healthy technol
    ```
 
 2. **Connect to Netlify**
+   
+   **Option A: Using GitHub Integration (Recommended)**
    - Log in to [Netlify](https://netlify.com)
    - Click "Add new site" → "Import an existing project"
    - Choose "GitHub" and authorize Netlify
+   - If you see "Upgrade account for specific scopes":
+     - Click "Configure the Netlify app on GitHub"
+     - Or go to: GitHub Settings → Applications → Netlify
+     - Grant access to your specific repository
    - Select your repository: `Madhura-mule25/website2`
+   
+   **Option B: Using Netlify CLI (Alternative)**
+   ```bash
+   # Install Netlify CLI
+   npm install -g netlify-cli
+   
+   # Login to Netlify
+   netlify login
+   
+   # Deploy from cyberbuddy directory
+   cd cyberbuddy
+   netlify deploy --prod
+   ```
 
 3. **Configure Build Settings**
    - Base directory: `cyberbuddy`
