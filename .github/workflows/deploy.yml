@@ -37,6 +37,8 @@ jobs:
         run: |
           cd cyberbuddy
           npm run build
+          # Ensure no CNAME file exists (remove custom domain)
+          rm -f dist/CNAME
         env:
           VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
           VITE_AUTH_DOMAIN: ${{ secrets.VITE_AUTH_DOMAIN }}
