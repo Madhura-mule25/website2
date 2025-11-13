@@ -1,19 +1,7 @@
-# Digital Wellness Hub
+
+# Digital Wellness Hub
 
 A React-based web application for promoting digital wellness and healthy technology habits.
-
-## 🚀 GitHub Pages Deployment
-
-### Prerequisites
-- A GitHub account
-- Firebase project with configuration
-
-### Deployment Steps
-
-1. **Push to GitHub** ✅ (Already done!)
-   ```
-   Repository: https://github.com/Madhura-mule25/website2
-   ```
 
 2. **Add GitHub Secrets (Environment Variables)**
    - Go to your GitHub repository: `https://github.com/Madhura-mule25/website2`
@@ -26,16 +14,7 @@ A React-based web application for promoting digital wellness and healthy technol
      - `VITE_MESSAGING_SENDER_ID` = your Firebase messaging sender ID
      - `VITE_APP_ID` = your Firebase app ID
      - `VITE_MEASUREMENT_ID` = your Firebase measurement ID
-
-3. **Enable GitHub Pages**
-   - Go to **Settings** → **Pages**
-   - Under **Source**, select **GitHub Actions**
-   - Save
-
-4. **Deploy**
-   - The site will automatically deploy when you push to main branch
-   - Check **Actions** tab to see deployment progress
-   - Once complete, your site will be live at: `https://madhura-mule25.github.io/website2/`
+live at: `https://madhura-mule25.github.io/website2/`
 
 ## 🛠️ Local Development
 
@@ -71,4 +50,5 @@ Then edit `.env` with your actual Firebase credentials.
 - React Router
 - Firebase (Authentication & Analytics)
 - Deployed on GitHub Pages
+
 
