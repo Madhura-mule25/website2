@@ -2,10 +2,10 @@
 
 A React-based web application for promoting digital wellness and healthy technology habits.
 
-## 🚀 Netlify Deployment
+## 🚀 GitHub Pages Deployment
 
 ### Prerequisites
-- A Netlify account
+- A GitHub account
 - Firebase project with configuration
 
 ### Deployment Steps
@@ -15,53 +15,27 @@ A React-based web application for promoting digital wellness and healthy technol
    Repository: https://github.com/Madhura-mule25/website2
    ```
 
-2. **Connect to Netlify**
-   
-   **Option A: Using GitHub Integration (Recommended)**
-   - Log in to [Netlify](https://netlify.com)
-   - Click "Add new site" → "Import an existing project"
-   - Choose "GitHub" and authorize Netlify
-   - If you see "Upgrade account for specific scopes":
-     - Click "Configure the Netlify app on GitHub"
-     - Or go to: GitHub Settings → Applications → Netlify
-     - Grant access to your specific repository
-   - Select your repository: `Madhura-mule25/website2`
-   
-   **Option B: Using Netlify CLI (Alternative)**
-   ```bash
-   # Install Netlify CLI
-   npm install -g netlify-cli
-   
-   # Login to Netlify
-   netlify login
-   
-   # Deploy from cyberbuddy directory
-   cd cyberbuddy
-   netlify deploy --prod
-   ```
+2. **Add GitHub Secrets (Environment Variables)**
+   - Go to your GitHub repository: `https://github.com/Madhura-mule25/website2`
+   - Click **Settings** → **Secrets and variables** → **Actions**
+   - Click **New repository secret** and add each of these:
+     - `VITE_API_KEY` = your Firebase API key
+     - `VITE_AUTH_DOMAIN` = your Firebase auth domain
+     - `VITE_PROJECT_ID` = your Firebase project ID
+     - `VITE_STORAGE_BUCKET` = your Firebase storage bucket
+     - `VITE_MESSAGING_SENDER_ID` = your Firebase messaging sender ID
+     - `VITE_APP_ID` = your Firebase app ID
+     - `VITE_MEASUREMENT_ID` = your Firebase measurement ID
 
-3. **Configure Build Settings**
-   - Base directory: `cyberbuddy`
-   - Build command: `npm run build`
-   - Publish directory: `dist`
-   
-   (These are already configured in `netlify.toml`)
+3. **Enable GitHub Pages**
+   - Go to **Settings** → **Pages**
+   - Under **Source**, select **GitHub Actions**
+   - Save
 
-4. **Add Environment Variables**
-   - In Netlify dashboard: Site settings → Environment variables
-   - Add all variables from `.env.example`:
-     - `VITE_API_KEY`
-     - `VITE_AUTH_DOMAIN`
-     - `VITE_PROJECT_ID`
-     - `VITE_STORAGE_BUCKET`
-     - `VITE_MESSAGING_SENDER_ID`
-     - `VITE_APP_ID`
-     - `VITE_MEASUREMENT_ID`
-
-5. **Deploy**
-   - Click "Deploy site"
-   - Wait for build to complete
-   - Your site will be live!
+4. **Deploy**
+   - The site will automatically deploy when you push to main branch
+   - Check **Actions** tab to see deployment progress
+   - Once complete, your site will be live at: `https://madhura-mule25.github.io/website2/`
 
 ## 🛠️ Local Development
 
@@ -96,3 +70,5 @@ Then edit `.env` with your actual Firebase credentials.
 - Vite
 - React Router
 - Firebase (Authentication & Analytics)
+- Deployed on GitHub Pages
+
