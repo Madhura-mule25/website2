@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import './Quiz.css';
-import { getUser, saveUser } from '../../lib/storage';
+import { getUser } from '../../lib/storage';
 
 const questions = [
   {
